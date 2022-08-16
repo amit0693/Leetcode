@@ -8,9 +8,9 @@ class Solution:
             a += str(s1.index(i)+1)
         res = [int(x) for x in a]
         x = sum(res)
-        if k > 1:
-            for i in range(k-1):
-                res2 = [int(x) for x in str(x)]
-                x = sum(res2)
+        
+        for i in range(k-1):
+            res2 = [int(x) for x in str(x)]
+            x = sum(res2)
                 
         return x
